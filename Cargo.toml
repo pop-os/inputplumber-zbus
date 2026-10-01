@@ -1,0 +1,9 @@
+[package]
+name = "inputplumber-zbus"
+version = "0.1.0"
+edition = "2024"
+description = "DBus interfaces for InputPlumber"
+license = "GPL-3.0-only"
+
+[dependencies]
+zbus = "5"

@@ -1,0 +1,8 @@
+[submodule "InputPlumber"]
+	path = InputPlumber
+	url = https://github.com/ShadowBlip/InputPlumber.git
+	branch = main
+[submodule "zbus"]
+	path = zbus
+	url = https://github.com/z-galaxy/zbus.git
+	branch = main
