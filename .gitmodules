@@ -4,5 +4,5 @@
 	branch = main
 [submodule "zbus"]
 	path = zbus
-	url = https://github.com/z-galaxy/zbus.git
+	url = https://github.com/jackpot51/zbus.git
 	branch = main
