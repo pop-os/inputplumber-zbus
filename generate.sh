@@ -26,10 +26,14 @@ xmls=(
 
 for xml in "${xmls[@]}"
 do
-    cargo run \
+    xml_path="../patched/${xml}"
+    if [ ! -e "${xml_path}" ]
+    then
+        xml_path="../InputPlumber/bindings/dbus-xml/${xml}"
+    fi
+    cargo run --release \
         --manifest-path ../zbus/zbus_xmlgen/Cargo.toml \
-        --release \
-        -- file "../InputPlumber/bindings/dbus-xml/$xml"
+        -- file "${xml_path}"
 done
 
 for file in *.rs

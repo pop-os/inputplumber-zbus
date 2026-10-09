@@ -47,6 +47,9 @@ pub trait CompositeDevice {
         target_event: &str,
     ) -> zbus::Result<()>;
 
+    /// SetTargetDevices method
+    fn set_target_devices(&self, target_device_types: &[&str]) -> zbus::Result<()>;
+
     /// Stop method
     fn stop(&self) -> zbus::Result<()>;
 
@@ -95,6 +98,4 @@ pub trait CompositeDevice {
     /// TargetDevices property
     #[zbus(property)]
     fn target_devices(&self) -> zbus::Result<Vec<String>>;
-    #[zbus(property)]
-    fn set_target_devices(&self, value: &[&str]) -> zbus::Result<()>;
 }
