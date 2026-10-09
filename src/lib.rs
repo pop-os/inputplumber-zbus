@@ -11,5 +11,6 @@ pub mod keyboard;
 pub mod leddevice;
 pub mod metrics;
 pub mod mouse;
+pub mod target;
 pub mod udev_device;
 pub use zbus;
