@@ -28,5 +28,5 @@ pub trait Debug {
 
     /// InputCapabilityReport property
     #[zbus(property)]
-    fn input_capability_report(&self) -> zbus::Result<String>;
+    fn input_capability_report(&self) -> zbus::Result<Vec<u8>>;
 }
